@@ -1,41 +1,43 @@
 /* button */
 
-.wrap {
+.html, body {
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  }
+  
+  .wrap {
+    height: 100%;
+    margin: 125px 0;
+    
   }
   
   .button {
-    min-width: 250px;
+    min-width: 300px;
     min-height: 60px;
     font-family: 'Nunito', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1.3px;
     font-weight: 700;
-    color: #e0e0e0;
-    
-    background: linear-gradient(90deg, rgb(66, 195, 255) 0%,  rgb(28, 120, 165) 100%);
+    color: #313133;
+    background: #32bce3;
+  background: linear-gradient(90deg, rgb(129, 212, 231) 0%, rgb(58, 170, 207) 100%);
     border: none;
     border-radius: 1000px;
-    box-shadow: 12px 12px 24px rgba(49, 100, 141, 0.64);
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;
     position: relative;
     padding: 10px;
-    margin-top: 60px;
     }
   
-  button::before {
-  content: '';
+  .button::before {
+    content: '';
     border-radius: 1000px;
-    min-width: calc(250px + 12px);
+    min-width: calc(300px + 12px);
     min-height: calc(60px + 12px);
-    border: 6px solid #276da09f;
-    box-shadow: 0 0 60px #00a6ff(0,255,203,.64);
+    border: 6px solid #5ccade;
+    box-shadow: 0 0 60px rgba(0, 213, 255, 0.64);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,15 +51,15 @@
     transform: translateY(-6px);
   }
   
-  button:hover::before, button:focus::before {
+  .button:hover::before, .button:focus::before {
     opacity: 1;
   }
   
-  button::after {
+  .button::after {
     content: '';
     width: 30px; height: 30px;
     border-radius: 100%;
-    border: 6px solid #4cabde;
+    border: 6px solid #00aaff;
     position: absolute;
     z-index: -1;
     top: 50%;
@@ -66,7 +68,20 @@
     animation: ring 1.5s infinite;
   }
   
-  button:hover::after, button:focus::after {
+  .button:hover::after, .button:focus::after {
     animation: none;
     display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
   }

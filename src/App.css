@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Prompt';
-    background-color: #FFFAFB;
+    background-image: linear-gradient(to bottom, #b9e1ff, #c3e3ff, #cce5ff, #d4e8ff, #dceaff, #e2edff, #e8efff, #edf2ff, #f3f5ff, #f7f8ff, #fcfbff, #ffffff);
   }
   
   * {
@@ -63,7 +63,7 @@ body {
     right: 40px;
     top: 0px;
     width: 700px;
-    height: 900px;
+    height: auto;
     margin-top: -330px;
   
   }
@@ -97,7 +97,7 @@ body {
     transform: scale(1.1, 1.1);
   }
   
-  .search-btn:hover {
+  #search-btn:hover {
     color: #FF2625 !important;
     border: 1px solid #FF2625 !important;
   }

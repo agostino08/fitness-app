@@ -13,7 +13,7 @@ const HeroBanner = () => {
         ml: {sm: '50px'},
         position:"relative"
     }}>
-      <Typography color="#cc1212" fontWeight="600" fontSize="26px" fontFamily="Prompt">
+      <Typography color="#00ACC0" fontWeight="600" fontSize="26px" fontFamily="Prompt">
         Fitness Club
       </Typography>
       <Typography 
@@ -26,24 +26,23 @@ const HeroBanner = () => {
       <Typography fontSize="22px" lineHeight="35px" mb={5}>
         Check out the most effective excersises.
       </Typography>
-      <div className='wrap'>
-            <div>
-            <button className='button' variant="contained" color="error" href="#exercises">
+         
+      <div className='wrap'>     
+        <button className='button' variant="contained" color="error" href="#exercises">
                 Explore Excercises
-        </button>
-            </div>
+        </button>     
       </div>
       
       <Typography
         fontWeight={600}
-        fontSize="200px"
-        color="#FF2625"
+        fontSize="180px"
+        color="#00ACC0"
         sx={{
-            opacity:0.2,
+            opacity:0.1,
             display: { lg: 'block', xs: 'none'}
         }}
       >
-        Exercises
+        Train Hard
     </Typography>
       <img src={HeroBannerImage} alt="banner" className='hero-banner-img'/>
     </Box>
