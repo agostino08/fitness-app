@@ -27,10 +27,12 @@ const HeroBanner = () => {
         Check out the most effective excersises.
       </Typography>
          
-      <div className='wrap'>     
+      <div className='wrap'>
+        <a href="#exercises">
         <button className='button' variant="contained" color="error" href="#exercises">
-                Explore Excercises
-        </button>     
+                Explore Exercises
+        </button> 
+        </a>    
       </div>
       
       <Typography
